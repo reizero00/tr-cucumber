@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: TestrayBuild
+  
+    &mdash; Documentation by YARD 0.9.9
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/cucumber.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "TestrayBuild";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/cucumber.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index (T)</a> &raquo;
+    
+    
+    <span class="title">TestrayBuild</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="feature_list_link"
+        href="feature_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: TestrayBuild
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">TestrayBuild</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>../liferay-qa-ee/testray/lib/selenium-cucumber/classes/testray_build.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Project &lt; Routine &lt; Build</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+  <h2>Instance Attribute Summary <small><a href="#" class="summary_toggle">collapse</a></small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#description-instance_method" title="#description (instance method)">#<strong>description</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Accessor.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#id-instance_method" title="#id (instance method)">#<strong>id</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Accessor.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#name-instance_method" title="#name (instance method)">#<strong>name</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Accessor.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parent_project_id-instance_method" title="#parent_project_id (instance method)">#<strong>parent_project_id</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Accessor.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parent_routine_id-instance_method" title="#parent_routine_id (instance method)">#<strong>parent_routine_id</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Accessor.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#prod_ver_id-instance_method" title="#prod_ver_id (instance method)">#<strong>prod_ver_id</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Accessor.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#add_to_parent_routine-instance_method" title="#add_to_parent_routine (instance method)">#<strong>add_to_parent_routine</strong>(expected_status = 200, *parent_routine)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Adds this Routine using JSON *parent_routine: Optional param to specify a
+parent_routine, if not specified upon initialization.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#delete-instance_method" title="#delete (instance method)">#<strong>delete</strong>(expected_status = 200)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Delete this Routine using JSON.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#delete_children-instance_method" title="#delete_children (instance method)">#<strong>delete_children</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Delete all descendants under this Routine by name or ID using JSON.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(build_name, product_ver, parent_routine = &#39;&#39;, description: &#39;&#39;)  &#x21d2; TestrayBuild </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Constructor: Initialize a Build under an optionally specified Routine
+parent_routine = TestrayRoutine object, ID, or name.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#update-instance_method" title="#update (instance method)">#<strong>update</strong>(update_data, expected_status = 200)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    #<strong>initialize</strong>(build_name, product_ver, parent_routine = &#39;&#39;, description: &#39;&#39;)  &#x21d2; <tt><span class='object_link'><a href="" title="TestrayBuild (class)">TestrayBuild</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Constructor: Initialize a Build under an optionally specified Routine
+parent_routine = TestrayRoutine object, ID, or name. Object preferred.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '../liferay-qa-ee/testray/lib/selenium-cucumber/classes/testray_build.rb', line 12</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_build_name'>build_name</span><span class='comma'>,</span> <span class='id identifier rubyid_product_ver'>product_ver</span><span class='comma'>,</span> <span class='id identifier rubyid_parent_routine'>parent_routine</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>description:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+	<span class='ivar'>@name</span> <span class='op'>=</span> <span class='id identifier rubyid_build_name'>build_name</span>
+	<span class='ivar'>@description</span> <span class='op'>=</span> <span class='id identifier rubyid_description'>description</span>
+	<span class='ivar'>@prod_ver</span> <span class='op'>=</span> <span class='id identifier rubyid_product_ver'>product_ver</span>
+
+	<span class='kw'>unless</span> <span class='id identifier rubyid_parent_routine'>parent_routine</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span> <span class='comment'># Execute block if a parent_routine was specified
+</span>		<span class='kw'>if</span> <span class='id identifier rubyid_parent_routine'>parent_routine</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span> <span class='op'>!=</span> <span class='const'><span class='object_link'><a href="TestrayRoutine.html" title="TestrayRoutine (class)">TestrayRoutine</a></span></span>
+			<span class='ivar'>@parent_routine_id</span> <span class='op'>=</span> <span class='id identifier rubyid_parent_routine'>parent_routine</span> <span class='kw'>if</span> <span class='id identifier rubyid_parent_routine'>parent_routine</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='period'>.</span><span class='id identifier rubyid_scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\D</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+		<span class='kw'>else</span>
+			<span class='ivar'>@parent_routine_id</span> <span class='op'>=</span> <span class='id identifier rubyid_parent_routine'>parent_routine</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span>
+			<span class='ivar'>@parent_project_id</span> <span class='op'>=</span> <span class='id identifier rubyid_parent_routine'>parent_routine</span><span class='period'>.</span><span class='id identifier rubyid_parent_project_id'>parent_project_id</span>
+		<span class='kw'>end</span>
+	<span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id=""></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="description-instance_method">
+  
+    #<strong>description</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Accessor</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+8
+9
+10</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '../liferay-qa-ee/testray/lib/selenium-cucumber/classes/testray_build.rb', line 8</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_description'>description</span>
+  <span class='ivar'>@description</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="id-instance_method">
+  
+    #<strong>id</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Accessor</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+8
+9
+10</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '../liferay-qa-ee/testray/lib/selenium-cucumber/classes/testray_build.rb', line 8</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_id'>id</span>
+  <span class='ivar'>@id</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="name-instance_method">
+  
+    #<strong>name</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Accessor</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+8
+9
+10</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '../liferay-qa-ee/testray/lib/selenium-cucumber/classes/testray_build.rb', line 8</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_name'>name</span>
+  <span class='ivar'>@name</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="parent_project_id-instance_method">
+  
+    #<strong>parent_project_id</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Accessor</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+8
+9
+10</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '../liferay-qa-ee/testray/lib/selenium-cucumber/classes/testray_build.rb', line 8</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parent_project_id'>parent_project_id</span>
+  <span class='ivar'>@parent_project_id</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="parent_routine_id-instance_method">
+  
+    #<strong>parent_routine_id</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Accessor</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+8
+9
+10</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '../liferay-qa-ee/testray/lib/selenium-cucumber/classes/testray_build.rb', line 8</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parent_routine_id'>parent_routine_id</span>
+  <span class='ivar'>@parent_routine_id</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="prod_ver_id-instance_method">
+  
+    #<strong>prod_ver_id</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Accessor</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+8
+9
+10</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '../liferay-qa-ee/testray/lib/selenium-cucumber/classes/testray_build.rb', line 8</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_prod_ver_id'>prod_ver_id</span>
+  <span class='ivar'>@prod_ver_id</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="add_to_parent_routine-instance_method">
+  
+    #<strong>add_to_parent_routine</strong>(expected_status = 200, *parent_routine)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Adds this Routine using JSON *parent_routine: Optional param to specify a
+parent_routine, if not specified upon initialization</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '../liferay-qa-ee/testray/lib/selenium-cucumber/classes/testray_build.rb', line 29</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_add_to_parent_routine'>add_to_parent_routine</span><span class='lparen'>(</span><span class='id identifier rubyid_expected_status'>expected_status</span> <span class='op'>=</span> <span class='int'>200</span><span class='comma'>,</span> <span class='op'>*</span><span class='id identifier rubyid_parent_routine'>parent_routine</span><span class='rparen'>)</span>
+	<span class='kw'>begin</span> <span class='comment'># Try to get and store @parent_routine_id
+</span>		<span class='kw'>if</span> <span class='id identifier rubyid_parent_routine'>parent_routine</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span> <span class='op'>!=</span> <span class='const'><span class='object_link'><a href="TestrayRoutine.html" title="TestrayRoutine (class)">TestrayRoutine</a></span></span>
+			<span class='kw'>unless</span> <span class='id identifier rubyid_parent_routine'>parent_routine</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='period'>.</span><span class='id identifier rubyid_scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\d</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span> <span class='comment'># If parent_routine given by ID (no letters)
+</span>				<span class='ivar'>@parent_routine_id</span> <span class='op'>=</span> <span class='id identifier rubyid_parent_routine'>parent_routine</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span>
+				<span class='id identifier rubyid_json_req'><span class='object_link'><a href="top-level-namespace.html#json_req-instance_method" title="#json_req (method)">json_req</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Get</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='gvar'>$testray_path</span><span class='embexpr_end'>}</span><span class='tstring_content'>/routines/view.json</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='label'>expected_status:</span> <span class='int'>200</span><span class='comma'>,</span> <span class='label'>uri_param:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>?id=</span><span class='embexpr_beg'>#{</span><span class='ivar'>@parent_routine_id</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+				<span class='ivar'>@parent_project_id</span> <span class='op'>=</span> <span class='ivar'>@hash_response</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>data</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>testrayProjectId</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+			<span class='kw'>end</span>
+		<span class='kw'>else</span>
+			<span class='ivar'>@parent_routine_id</span> <span class='op'>=</span> <span class='id identifier rubyid_parent_routine'>parent_routine</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span>
+			<span class='ivar'>@parent_project_id</span> <span class='op'>=</span> <span class='id identifier rubyid_parent_routine'>parent_routine</span><span class='period'>.</span><span class='id identifier rubyid_parent_project_id'>parent_project_id</span>
+		<span class='kw'>end</span>
+	<span class='kw'>rescue</span> <span class='const'>NameError</span> <span class='comment'># if parent_routine not defined
+</span>		<span class='id identifier rubyid_raise'>raise</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Since @parent_routine_id is undefined, you must supply a parent_routine identifier in the call like: .add(parent_routine)</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+	<span class='kw'>end</span>
+
+	<span class='id identifier rubyid_json_req'><span class='object_link'><a href="top-level-namespace.html#json_req-instance_method" title="#json_req (method)">json_req</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Get</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='gvar'>$testray_path</span><span class='embexpr_end'>}</span><span class='tstring_content'>/product_versions.json?testrayProjectId=</span><span class='embexpr_beg'>#{</span><span class='ivar'>@parent_project_id</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='label'>expected_status:</span> <span class='int'>200</span><span class='rparen'>)</span>
+	<span class='kw'>begin</span>
+		<span class='ivar'>@prod_ver_id</span> <span class='op'>=</span> <span class='ivar'>@hash_response</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>data</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_x'>x</span><span class='op'>|</span> <span class='id identifier rubyid_x'>x</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>name</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='ivar'>@prod_ver</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rbrace'>}</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>testrayProductVersionId</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+	<span class='kw'>rescue</span>
+		<span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Unable to store testrayProductVersionId because &#39;</span><span class='embexpr_beg'>#{</span><span class='ivar'>@prod_ver</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39; was not found in the response.</span><span class='tstring_end'>&quot;</span></span>
+	<span class='kw'>end</span>
+
+	<span class='id identifier rubyid_req_data'>req_data</span> <span class='op'>=</span> <span class='lbrace'>{</span>
+		  <span class='label'>testrayRoutineId:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='ivar'>@parent_routine_id</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+		  <span class='label'>description:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='ivar'>@description</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+		  <span class='label'>testrayProductVersionId:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='ivar'>@prod_ver_id</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+		  <span class='label'>name:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='ivar'>@name</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+	<span class='rbrace'>}</span>
+
+	<span class='id identifier rubyid_json_req'><span class='object_link'><a href="top-level-namespace.html#json_req-instance_method" title="#json_req (method)">json_req</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Post</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='gvar'>$testray_path</span><span class='embexpr_end'>}</span><span class='tstring_content'>/builds.json</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_req_data'>req_data</span><span class='comma'>,</span> <span class='label'>expected_status:</span> <span class='id identifier rubyid_expected_status'>expected_status</span><span class='rparen'>)</span>
+	<span class='ivar'>@id</span> <span class='op'>=</span> <span class='id identifier rubyid_get_hash_response'><span class='object_link'><a href="top-level-namespace.html#get_hash_response-instance_method" title="#get_hash_response (method)">get_hash_response</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>builds</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='ivar'>@name</span><span class='rparen'>)</span> <span class='kw'>unless</span> <span class='id identifier rubyid_expected_status'>expected_status</span> <span class='op'>!=</span> <span class='int'>200</span>
+	<span class='kw'>self</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="delete-instance_method">
+  
+    #<strong>delete</strong>(expected_status = 200)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Delete this Routine using JSON</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+65
+66
+67
+68</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '../liferay-qa-ee/testray/lib/selenium-cucumber/classes/testray_build.rb', line 65</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='id identifier rubyid_expected_status'>expected_status</span> <span class='op'>=</span> <span class='int'>200</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_json_req'><span class='object_link'><a href="top-level-namespace.html#json_req-instance_method" title="#json_req (method)">json_req</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Post</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='gvar'>$testray_path</span><span class='embexpr_end'>}</span><span class='tstring_content'>/builds/</span><span class='embexpr_beg'>#{</span><span class='ivar'>@id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/delete.json</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='label'>expected_status:</span> <span class='id identifier rubyid_expected_status'>expected_status</span><span class='rparen'>)</span>
+	<span class='kw'>self</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="delete_children-instance_method">
+  
+    #<strong>delete_children</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Delete all descendants under this Routine by name or ID using JSON</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+71
+72
+73
+74</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '../liferay-qa-ee/testray/lib/selenium-cucumber/classes/testray_build.rb', line 71</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_delete_children'>delete_children</span>
+	<span class='comment'>#TODO: Upon completion of entire class hierarchy
+</span>	<span class='kw'>self</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="update-instance_method">
+  
+    #<strong>update</strong>(update_data, expected_status = 200)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+76
+77
+78
+79</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '../liferay-qa-ee/testray/lib/selenium-cucumber/classes/testray_build.rb', line 76</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_update'>update</span><span class='lparen'>(</span><span class='id identifier rubyid_update_data'>update_data</span><span class='comma'>,</span> <span class='id identifier rubyid_expected_status'>expected_status</span> <span class='op'>=</span> <span class='int'>200</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_json_req'><span class='object_link'><a href="top-level-namespace.html#json_req-instance_method" title="#json_req (method)">json_req</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Post</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='gvar'>$testray_path</span><span class='embexpr_end'>}</span><span class='tstring_content'>/builds/</span><span class='embexpr_beg'>#{</span><span class='ivar'>@id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/update.json</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_update_data'>update_data</span><span class='comma'>,</span> <span class='label'>expected_status:</span> <span class='id identifier rubyid_expected_status'>expected_status</span><span class='rparen'>)</span>
+	<span class='kw'>self</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Thu Aug  3 17:16:24 2017 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.9 (ruby-2.3.0).
+</div>
+
+    </div>
+  </body>
+</html>
