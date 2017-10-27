@@ -14,8 +14,6 @@
 
   <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
 
-  <link rel="stylesheet" href="css/cucumber.css" type="text/css" charset="utf-8" />
-
 <script type="text/javascript" charset="utf-8">
   pathId = "TestrayBuild";
   relpath = '';
@@ -25,8 +23,6 @@
   <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
 
   <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
-
-  <script type="text/javascript" charset="utf-8" src="js/cucumber.js"></script>
 
 
   </head>
@@ -49,8 +45,8 @@
 
         <div id="search">
   
-    <a class="full_list_link" id="feature_list_link"
-        href="feature_list.html">
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
 
         <svg width="24" height="24">
           <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
@@ -336,6 +332,28 @@ parent_routine, if not specified upon initialization.</p>
         <li class="public ">
   <span class="summary_signature">
     
+      <a href="#archive-instance_method" title="#archive (instance method)">#<strong>archive</strong>(archive_flag, expected_status = 200)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#delete-instance_method" title="#delete (instance method)">#<strong>delete</strong>(expected_status = 200)  &#x21d2; Object </a>
     
 
@@ -411,6 +429,28 @@ parent_routine = TestrayRoutine object, ID, or name.</p>
         <li class="public ">
   <span class="summary_signature">
     
+      <a href="#promote-instance_method" title="#promote (instance method)">#<strong>promote</strong>(promote_flag, expected_status = 200)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#update-instance_method" title="#update (instance method)">#<strong>update</strong>(update_data, expected_status = 200)  &#x21d2; Object </a>
     
 
@@ -476,7 +516,9 @@ parent_routine = TestrayRoutine object, ID, or name. Object preferred.</p>
 22
 23
 24
-25</pre>
+25
+26
+27</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File '../liferay-qa-ee/testray/lib/selenium-cucumber/classes/testray_build.rb', line 12</span>
@@ -489,6 +531,8 @@ parent_routine = TestrayRoutine object, ID, or name. Object preferred.</p>
 	<span class='kw'>unless</span> <span class='id identifier rubyid_parent_routine'>parent_routine</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span> <span class='comment'># Execute block if a parent_routine was specified
 </span>		<span class='kw'>if</span> <span class='id identifier rubyid_parent_routine'>parent_routine</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span> <span class='op'>!=</span> <span class='const'><span class='object_link'><a href="TestrayRoutine.html" title="TestrayRoutine (class)">TestrayRoutine</a></span></span>
 			<span class='ivar'>@parent_routine_id</span> <span class='op'>=</span> <span class='id identifier rubyid_parent_routine'>parent_routine</span> <span class='kw'>if</span> <span class='id identifier rubyid_parent_routine'>parent_routine</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='period'>.</span><span class='id identifier rubyid_scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\D</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+			<span class='id identifier rubyid_json_req'>json_req</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Get</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='gvar'>$testray_path</span><span class='embexpr_end'>}</span><span class='tstring_content'>/routines/view.json</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='label'>expected_status:</span> <span class='int'>200</span><span class='comma'>,</span> <span class='label'>uri_param:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>?id=</span><span class='embexpr_beg'>#{</span><span class='ivar'>@parent_routine_id</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+			<span class='ivar'>@parent_project_id</span> <span class='op'>=</span> <span class='ivar'>@hash_response</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>data</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>testrayProjectId</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
 		<span class='kw'>else</span>
 			<span class='ivar'>@parent_routine_id</span> <span class='op'>=</span> <span class='id identifier rubyid_parent_routine'>parent_routine</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span>
 			<span class='ivar'>@parent_project_id</span> <span class='op'>=</span> <span class='id identifier rubyid_parent_routine'>parent_routine</span><span class='period'>.</span><span class='id identifier rubyid_parent_project_id'>parent_project_id</span>
@@ -797,8 +841,6 @@ parent_routine, if not specified upon initialization</p>
       <pre class="lines">
 
 
-29
-30
 31
 32
 33
@@ -830,17 +872,19 @@ parent_routine, if not specified upon initialization</p>
 59
 60
 61
-62</pre>
+62
+63
+64</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File '../liferay-qa-ee/testray/lib/selenium-cucumber/classes/testray_build.rb', line 29</span>
+      <pre class="code"><span class="info file"># File '../liferay-qa-ee/testray/lib/selenium-cucumber/classes/testray_build.rb', line 31</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_add_to_parent_routine'>add_to_parent_routine</span><span class='lparen'>(</span><span class='id identifier rubyid_expected_status'>expected_status</span> <span class='op'>=</span> <span class='int'>200</span><span class='comma'>,</span> <span class='op'>*</span><span class='id identifier rubyid_parent_routine'>parent_routine</span><span class='rparen'>)</span>
 	<span class='kw'>begin</span> <span class='comment'># Try to get and store @parent_routine_id
 </span>		<span class='kw'>if</span> <span class='id identifier rubyid_parent_routine'>parent_routine</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span> <span class='op'>!=</span> <span class='const'><span class='object_link'><a href="TestrayRoutine.html" title="TestrayRoutine (class)">TestrayRoutine</a></span></span>
 			<span class='kw'>unless</span> <span class='id identifier rubyid_parent_routine'>parent_routine</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='period'>.</span><span class='id identifier rubyid_scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\d</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span> <span class='comment'># If parent_routine given by ID (no letters)
 </span>				<span class='ivar'>@parent_routine_id</span> <span class='op'>=</span> <span class='id identifier rubyid_parent_routine'>parent_routine</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span>
-				<span class='id identifier rubyid_json_req'><span class='object_link'><a href="top-level-namespace.html#json_req-instance_method" title="#json_req (method)">json_req</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Get</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='gvar'>$testray_path</span><span class='embexpr_end'>}</span><span class='tstring_content'>/routines/view.json</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='label'>expected_status:</span> <span class='int'>200</span><span class='comma'>,</span> <span class='label'>uri_param:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>?id=</span><span class='embexpr_beg'>#{</span><span class='ivar'>@parent_routine_id</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+				<span class='id identifier rubyid_json_req'>json_req</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Get</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='gvar'>$testray_path</span><span class='embexpr_end'>}</span><span class='tstring_content'>/routines/view.json</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='label'>expected_status:</span> <span class='int'>200</span><span class='comma'>,</span> <span class='label'>uri_param:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>?id=</span><span class='embexpr_beg'>#{</span><span class='ivar'>@parent_routine_id</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
 				<span class='ivar'>@parent_project_id</span> <span class='op'>=</span> <span class='ivar'>@hash_response</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>data</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>testrayProjectId</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
 			<span class='kw'>end</span>
 		<span class='kw'>else</span>
@@ -851,7 +895,7 @@ parent_routine, if not specified upon initialization</p>
 </span>		<span class='id identifier rubyid_raise'>raise</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Since @parent_routine_id is undefined, you must supply a parent_routine identifier in the call like: .add(parent_routine)</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
 	<span class='kw'>end</span>
 
-	<span class='id identifier rubyid_json_req'><span class='object_link'><a href="top-level-namespace.html#json_req-instance_method" title="#json_req (method)">json_req</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Get</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='gvar'>$testray_path</span><span class='embexpr_end'>}</span><span class='tstring_content'>/product_versions.json?testrayProjectId=</span><span class='embexpr_beg'>#{</span><span class='ivar'>@parent_project_id</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='label'>expected_status:</span> <span class='int'>200</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_json_req'>json_req</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Get</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='gvar'>$testray_path</span><span class='embexpr_end'>}</span><span class='tstring_content'>/product_versions.json?testrayProjectId=</span><span class='embexpr_beg'>#{</span><span class='ivar'>@parent_project_id</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='label'>expected_status:</span> <span class='int'>200</span><span class='rparen'>)</span>
 	<span class='kw'>begin</span>
 		<span class='ivar'>@prod_ver_id</span> <span class='op'>=</span> <span class='ivar'>@hash_response</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>data</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_x'>x</span><span class='op'>|</span> <span class='id identifier rubyid_x'>x</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>name</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='ivar'>@prod_ver</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rbrace'>}</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>testrayProductVersionId</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
 	<span class='kw'>rescue</span>
@@ -865,8 +909,40 @@ parent_routine, if not specified upon initialization</p>
 		  <span class='label'>name:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='ivar'>@name</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
 	<span class='rbrace'>}</span>
 
-	<span class='id identifier rubyid_json_req'><span class='object_link'><a href="top-level-namespace.html#json_req-instance_method" title="#json_req (method)">json_req</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Post</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='gvar'>$testray_path</span><span class='embexpr_end'>}</span><span class='tstring_content'>/builds.json</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_req_data'>req_data</span><span class='comma'>,</span> <span class='label'>expected_status:</span> <span class='id identifier rubyid_expected_status'>expected_status</span><span class='rparen'>)</span>
-	<span class='ivar'>@id</span> <span class='op'>=</span> <span class='id identifier rubyid_get_hash_response'><span class='object_link'><a href="top-level-namespace.html#get_hash_response-instance_method" title="#get_hash_response (method)">get_hash_response</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>builds</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='ivar'>@name</span><span class='rparen'>)</span> <span class='kw'>unless</span> <span class='id identifier rubyid_expected_status'>expected_status</span> <span class='op'>!=</span> <span class='int'>200</span>
+	<span class='id identifier rubyid_json_req'>json_req</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Post</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='gvar'>$testray_path</span><span class='embexpr_end'>}</span><span class='tstring_content'>/builds.json</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_req_data'>req_data</span><span class='comma'>,</span> <span class='label'>expected_status:</span> <span class='id identifier rubyid_expected_status'>expected_status</span><span class='rparen'>)</span>
+	<span class='ivar'>@id</span> <span class='op'>=</span> <span class='id identifier rubyid_get_hash_response'>get_hash_response</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>builds</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='ivar'>@name</span><span class='rparen'>)</span> <span class='kw'>unless</span> <span class='id identifier rubyid_expected_status'>expected_status</span> <span class='op'>!=</span> <span class='int'>200</span>
+	<span class='kw'>self</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="archive-instance_method">
+  
+    #<strong>archive</strong>(archive_flag, expected_status = 200)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+83
+84
+85
+86</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '../liferay-qa-ee/testray/lib/selenium-cucumber/classes/testray_build.rb', line 83</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_archive'>archive</span><span class='lparen'>(</span><span class='id identifier rubyid_archive_flag'>archive_flag</span><span class='comma'>,</span> <span class='id identifier rubyid_expected_status'>expected_status</span> <span class='op'>=</span> <span class='int'>200</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_json_req'>json_req</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Get</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='gvar'>$testray_path</span><span class='embexpr_end'>}</span><span class='tstring_content'>/builds/</span><span class='embexpr_beg'>#{</span><span class='ivar'>@id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/updateArchived.json</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='label'>uri_param:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>?archived=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_archive_flag'>archive_flag</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='label'>expected_status:</span> <span class='id identifier rubyid_expected_status'>expected_status</span><span class='rparen'>)</span>
 	<span class='kw'>self</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -900,16 +976,16 @@ parent_routine, if not specified upon initialization</p>
       <pre class="lines">
 
 
-65
-66
 67
-68</pre>
+68
+69
+70</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File '../liferay-qa-ee/testray/lib/selenium-cucumber/classes/testray_build.rb', line 65</span>
+      <pre class="code"><span class="info file"># File '../liferay-qa-ee/testray/lib/selenium-cucumber/classes/testray_build.rb', line 67</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='id identifier rubyid_expected_status'>expected_status</span> <span class='op'>=</span> <span class='int'>200</span><span class='rparen'>)</span>
-	<span class='id identifier rubyid_json_req'><span class='object_link'><a href="top-level-namespace.html#json_req-instance_method" title="#json_req (method)">json_req</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Post</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='gvar'>$testray_path</span><span class='embexpr_end'>}</span><span class='tstring_content'>/builds/</span><span class='embexpr_beg'>#{</span><span class='ivar'>@id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/delete.json</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='label'>expected_status:</span> <span class='id identifier rubyid_expected_status'>expected_status</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_json_req'>json_req</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Post</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='gvar'>$testray_path</span><span class='embexpr_end'>}</span><span class='tstring_content'>/builds/</span><span class='embexpr_beg'>#{</span><span class='ivar'>@id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/delete.json</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='label'>expected_status:</span> <span class='id identifier rubyid_expected_status'>expected_status</span><span class='rparen'>)</span>
 	<span class='kw'>self</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -943,17 +1019,49 @@ parent_routine, if not specified upon initialization</p>
       <pre class="lines">
 
 
-71
-72
 73
-74</pre>
+74
+75
+76</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File '../liferay-qa-ee/testray/lib/selenium-cucumber/classes/testray_build.rb', line 71</span>
+      <pre class="code"><span class="info file"># File '../liferay-qa-ee/testray/lib/selenium-cucumber/classes/testray_build.rb', line 73</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_children'>delete_children</span>
 	<span class='comment'>#TODO: Upon completion of entire class hierarchy
 </span>	<span class='kw'>self</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="promote-instance_method">
+  
+    #<strong>promote</strong>(promote_flag, expected_status = 200)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+88
+89
+90
+91</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '../liferay-qa-ee/testray/lib/selenium-cucumber/classes/testray_build.rb', line 88</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_promote'>promote</span><span class='lparen'>(</span><span class='id identifier rubyid_promote_flag'>promote_flag</span><span class='comma'>,</span> <span class='id identifier rubyid_expected_status'>expected_status</span> <span class='op'>=</span> <span class='int'>200</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_json_req'>json_req</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Get</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='gvar'>$testray_path</span><span class='embexpr_end'>}</span><span class='tstring_content'>/builds/</span><span class='embexpr_beg'>#{</span><span class='ivar'>@id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/updatePromoted.json</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='label'>uri_param:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>?promoted=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_promote_flag'>promote_flag</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='label'>expected_status:</span> <span class='id identifier rubyid_expected_status'>expected_status</span><span class='rparen'>)</span>
+	<span class='kw'>self</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -975,16 +1083,16 @@ parent_routine, if not specified upon initialization</p>
       <pre class="lines">
 
 
-76
-77
 78
-79</pre>
+79
+80
+81</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File '../liferay-qa-ee/testray/lib/selenium-cucumber/classes/testray_build.rb', line 76</span>
+      <pre class="code"><span class="info file"># File '../liferay-qa-ee/testray/lib/selenium-cucumber/classes/testray_build.rb', line 78</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update'>update</span><span class='lparen'>(</span><span class='id identifier rubyid_update_data'>update_data</span><span class='comma'>,</span> <span class='id identifier rubyid_expected_status'>expected_status</span> <span class='op'>=</span> <span class='int'>200</span><span class='rparen'>)</span>
-	<span class='id identifier rubyid_json_req'><span class='object_link'><a href="top-level-namespace.html#json_req-instance_method" title="#json_req (method)">json_req</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Post</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='gvar'>$testray_path</span><span class='embexpr_end'>}</span><span class='tstring_content'>/builds/</span><span class='embexpr_beg'>#{</span><span class='ivar'>@id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/update.json</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_update_data'>update_data</span><span class='comma'>,</span> <span class='label'>expected_status:</span> <span class='id identifier rubyid_expected_status'>expected_status</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_json_req'>json_req</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Post</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='gvar'>$testray_path</span><span class='embexpr_end'>}</span><span class='tstring_content'>/builds/</span><span class='embexpr_beg'>#{</span><span class='ivar'>@id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/update.json</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_update_data'>update_data</span><span class='comma'>,</span> <span class='label'>expected_status:</span> <span class='id identifier rubyid_expected_status'>expected_status</span><span class='rparen'>)</span>
 	<span class='kw'>self</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -997,9 +1105,9 @@ parent_routine, if not specified upon initialization</p>
 </div>
 
       <div id="footer">
-  Generated on Thu Aug  3 17:16:24 2017 by
+  Generated on Fri Oct 27 09:36:09 2017 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.9 (ruby-2.3.0).
+  0.9.9 (ruby-2.3.3).
 </div>
 
     </div>
