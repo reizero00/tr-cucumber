@@ -30,4 +30,4 @@ echo "=================="
 
 git add .
 git commit -m "updating files"
-git push wedeploy master
+git push origin wedeploy master
