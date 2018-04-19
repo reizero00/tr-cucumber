@@ -15,7 +15,7 @@ echo "=================="
 echo "Generate Docs"
 echo "=================="
 
-yardoc "../liferay-qa-ee/testray/features/*/*.feature" "../liferay-qa-ee/testray/lib/selenium-cucumber/*.rb" "../liferay-qa-ee/testray/lib/selenium-cucumber/*/*.rb" "../liferay-qa-ee/testray/*.md"
+yardoc "../liferay-qa-ee/testray/features/*/*/*.feature" "../liferay-qa-ee/testray/features/*/*.feature" "../liferay-qa-ee/testray/lib/selenium-cucumber/*.rb" "../liferay-qa-ee/testray/lib/selenium-cucumber/*/*.rb" "../liferay-qa-ee/testray/*.md"
 
 echo "=================="
 echo "Move files"
